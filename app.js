@@ -148,7 +148,7 @@ app.put("/todos/:todoId/", async (request, response) => {
      id = ${todoId};`;
 
   await db.run(updateTodoQuery);
-  response.send(`${updateQuery} Updated`);
+  response.send(`${updateColumn} Updated`);
 });
 
 //apls 5
